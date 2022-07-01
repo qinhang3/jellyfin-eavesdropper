@@ -20,7 +20,7 @@ jobs:
           # Username used to log against the Docker registry
           username: qinhang3
           # Password or personal access token used to log against the Docker registry
-          password: ${{dockerhub.DOCKER_TOKEN}}
+          password: ${{secrets.DOCKER_TOKEN}}
           # Specifies whether the given registry is ECR (auto, true or false)
           ecr: auto # optional, default is auto
           # Log out from the Docker registry at the end of a job
